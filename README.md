@@ -23,4 +23,9 @@ Connect this repository to Cloudflare Pages and use:
 - Root directory: `/`
 
 The included `wrangler.jsonc` also identifies the Pages build output directory
-for Wrangler-based workflows.
+for Wrangler-based workflows. This browser-only app does not currently require
+Workers, database, or storage bindings.
+
+For a manual deployment, authenticate with `npx wrangler login`, create a Pages
+project named `nexus-aii` in Cloudflare, then run `npm run deploy`. Configure
+custom domains in the Cloudflare Pages project settings.

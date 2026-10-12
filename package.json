@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=nexus-aii"
   },
   "engines": {
     "node": ">=20.19.0"
@@ -16,6 +17,7 @@
     "ag-psd": "31.0.3"
   },
   "devDependencies": {
-    "vite": "8.3.4"
+    "vite": "8.3.4",
+    "wrangler": "4.149.0"
   }
 }
