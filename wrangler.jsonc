@@ -1,6 +1,9 @@
 {
   "name": "nexus-aii",
   "compatibility_date": "2026-10-06",
+  "build": {
+    "command": "npm run build"
+  },
   "assets": {
     "directory": "./dist"
   },
